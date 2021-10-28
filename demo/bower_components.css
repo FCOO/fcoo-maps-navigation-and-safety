@@ -25010,12 +25010,6 @@ lbm-puls          : Has a pulsing ring
 lbm-transparent   : Inner color get opacity: 0.7
 lbm-hover         : When hover: get shadow and opacity: 0.9 for ibm-transparent
 ************************************************/
-/***********************************************
-
-leaflet-bootstrap-marker-colors.scss
-List of avaible color-name and values
-
-************************************************/
 /***********************************************************************
 
 leaflet-bootstrap-marker-mixin.scss
@@ -25038,6 +25032,29 @@ fa-lbm-color
 Create class for color and border-color used by L.bsMarkerAsIcon (and $.bsMarkerAsIcon)
 to create fa-icon looking like the marker
 *************************************************************************/
+/***********************************************
+leaflet-bootstrap-marker.scss
+
+lbm-type-TYPE lbm-color-COLOR [lbm-border-color-COLOR] [lbm-transparent] [lbm-puls] [lbm-hover]
+
+lbm-type-TYPE     : Sets the different type of bsMarker
+lbm-[COLOR]       : Sets inner color to [COLOR]
+lbm-border-[COLOR]: border-color = [COLOR]
+
+lbm-shadow        : Shadow in same color as inner color
+lbm-puls          : Has a pulsing ring
+lbm-transparent   : Inner color get opacity: 0.7
+lbm-hover         : When hover: get shadow and opacity: 0.9 for ibm-transparent
+************************************************/
+/***********************************************
+
+leaflet-bootstrap-marker-colors.scss
+List of avaible color-name and values
+
+************************************************/
+/***********************************************
+leaflet-bootstrap-marker-base.scss
+************************************************/
 .fa-lbm-color-pink {
   color: pink; }
 
@@ -25442,7 +25459,7 @@ https://github.com/mapshakers/leaflet-icon-pulse
 
 .lbm-type-circle {
   opacity: 1;
-  border: 2px solid black;
+  border: 1px solid black;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.5);
   background-color: #fff;
   color: #000;
@@ -25477,7 +25494,7 @@ https://github.com/mapshakers/leaflet-icon-pulse
     animation: pulsate 1s ease-out;
     animation-iteration-count: infinite; }
   .lbm-type-circle .inner {
-    font-size: calc(.7em - 4px); }
+    font-size: calc(.7em - 2px); }
 
 .lbm-type-circle.lbm-color-pink {
   background-color: pink;
