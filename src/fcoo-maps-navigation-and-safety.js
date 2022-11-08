@@ -39,6 +39,7 @@
                             },
                             options
                         );
+
                     menuList.push( nsMap._addMapLayer(id, nsMap.MapLayer_static, mapLayerOptions ).menuItemOptions() );
                 });
                 addMenu(menuList);
