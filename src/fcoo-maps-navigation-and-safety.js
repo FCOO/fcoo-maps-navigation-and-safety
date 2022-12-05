@@ -34,7 +34,7 @@
                             $.extend({
                                 id    : id,
                                 //index : groupIndex++, MANGLER Hvad bruges den til????????????????
-                                icon  : 'fas fa-slash fa-navigation',
+                                icon  : 'fas fa-slash-back fa-navigation',
                                 zIndex: nsMap.zIndex.STATIC_LAYER_WATER,
                             },
                             options
